@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int menu_1(char filename[256]);
+void menu_1(char filename[256]);
 
 int main(void)
 {
@@ -25,7 +25,7 @@ int main(void)
     return 0;
 }
 
-int menu_1(char filename[256])
+void menu_1(char filename[256])
 {
     fscanf(stdin, "%255s", filename);
     FILE* fp = fopen(filename, "r");
